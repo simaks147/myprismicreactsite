@@ -153,14 +153,7 @@ const RenderBody = ({ home }) => (
       </div>
     </header>
 
-    <section className="homepage-banner">
-      <img className="homepage-banner-image" src={home.banner_image.url} alt={home.banner_image.alt} />
-      <div className="homepage-banner-box-wrapper">
-        <div className="homepage-banner-box">
-        {RichText.render(home.banner_text, linkResolver)}
-        </div>
-      </div>
-    </section>
+    /* No Banner in Dev */
 
     <div className="homepage-slices-wrapper">
       <RenderSlices slices={home.body} />

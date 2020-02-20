@@ -26,6 +26,11 @@ module.exports = {
           match: '/blog/:uid',
           path: '/blogpost',
           component: require.resolve('./src/templates/blogPost.js')
+        },{
+          type: 'New_type_else',
+          match: '/new-type-else/:uid',
+          path: '/new-type',
+          component: require.resolve('./src/templates/newTypeElse.js')
         }]
       }
     },

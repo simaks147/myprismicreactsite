@@ -29,7 +29,7 @@ module.exports = {
         },{
           type: 'New_type_else',
           match: '/new-type-else/:uid',
-          path: '/new-type',
+          path: '/new-type3',
           component: require.resolve('./src/templates/newTypeElse.js')
         }]
       }
@@ -45,6 +45,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

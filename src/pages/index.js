@@ -156,7 +156,8 @@ const RenderBody = ({ home }) => (
     /* No Banner in Dev */
 
     <div className="homepage-slices-wrapper">
-      <RenderSlices slices={home.body} />
+        <h3>All Slices</h3><br>
+        <RenderSlices slices={home.body} />
     </div>
   </React.Fragment>
 );
